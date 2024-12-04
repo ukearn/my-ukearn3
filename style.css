@@ -1,0 +1,202 @@
+
+
+   
+    
+     /* CSS for background image with opacity */
+     body {
+      position: relative; /* Make sure body has a positioning context */
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      margin-top: 65px;
+  }
+
+  /* Create a pseudo-element for the background */
+  body::before {
+      content: ''; /* Required for the pseudo-element */
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('ukflag/ukwoman2.jpg'); /* Set the background image */
+      background-size: cover; /* Ensure it covers the entire body */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Prevent repeating the image */
+      opacity: 0.20; /* Set opacity to just the background image */
+      z-index: -1; /* Place it behind the content */
+  }
+    
+
+
+/*background-color:#191919;*/
+.fa-cart-shopping, .fa-qrcode, .fa-user{color:white; font-size: 27px;}
+.fa-angle-down{color: white; font-size:10px; vertical-align:center;}
+.flag {
+  display: flex;
+}
+.fa-magnifying-glass{
+  color: white; font-size: 20px;
+}
+
+.header {
+  display: flex;  padding: 10px; flex-direction: row;
+  align-items: center;
+  background-color:#191919;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.ukflag {
+  width: 80px;
+  height: 40px;
+  margin-left: 60px;
+  border-radius: 
+}
+.ukflag2 {
+  width: 1px;
+  height: 1px;
+  }
+
+  .logo {font-size: 39px; margin-left: px; color: white; font-weight: 500; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 45px;
+
+}
+.search-bar-div {flex: 1; display: flex; align-items: center;}
+.search-bar {width: 100%; height: 37px; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border: none; margin-right:none;}
+.icons-div{display: flex; width: 200px; margin-left: 30px; justify-content: space-between; align-items: center;
+margin-right: 20px;
+}
+.search-bar-button-div{
+  height: 39px; border: none; background-color: white;
+  padding-right: 4px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 20px; border-bottom-right-radius: 20px;
+}
+.search-bar-button{
+  border: none;
+  background-color: black;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+}
+.second-div{height: 60px; display: flex; justify-content:space-between; background-color:#191919;align-items: center; color: white; font-size: 19px;
+}
+.all-category-div{display: flex; width: 200px; justify-content: space-between; margin-left: 70px;
+background-color: rgb(143, 143, 143);
+padding: 8px 25px;
+border-radius: 20px;
+}
+.all-category-text{display: inline-block; margin-left:10px ;}
+
+.second-div-div:hover{background-color: rgb(141, 140, 140);
+}
+.second-div-div{padding: 8px 20px;
+border-radius: 20px;}
+.second-div-div-more:hover{background-color: rgb(141, 140, 140);
+
+}.second-div-div-more{
+  padding: 8px 15px;
+border-radius: 20px;
+margin-right:50px ;
+}
+span{color: rgb(250, 36, 36);font-weight: bold;}
+.cart-shopping-button{display: inline-block; position: absolute;
+top:-14px;
+right: -14px;
+padding: 2px 5px;
+border-radius: 10px;
+}
+.cart-shopping{
+  position: relative;
+}
+button{
+  padding: 1px 10px;
+  border:none;
+  border-radius: 8px;
+}
+
+.write-up{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 50px;
+}
+span{color: blueviolet;}
+.not-found{
+  color: red;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.not-found p {
+  font-size: 15px;
+  margin-top: 0px;
+}
+.last-p{
+  margin-top: 0;
+  font-size: 15px;
+}
+.second-p{
+  margin-bottom: 0;
+}
+.submit-button{
+  background-color: blue;
+  color: white;
+  margin-top: 10px;
+  padding: 5px;
+}
+.submit-button:hover{opacity: 0.5;}
+.submit-button:active{background-color: gray;}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .service {
+    margin-bottom: 20px;
+  }
+}
+
+/* For tablets and smaller desktops */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .content {
+    flex-direction: row;
+  }
+
+  .service {
+    flex: 1;
+  }
+}
+
+/* For large screens */
+@media (min-width: 1024px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .content {
+    gap: 30px;
+  }
+}
